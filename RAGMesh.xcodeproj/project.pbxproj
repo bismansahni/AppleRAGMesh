@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56FC25712E337E540079AC18 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC25702E337E540079AC18 /* SQLite */; };
+		56FC25732E337E540079AC18 /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC25722E337E540079AC18 /* Transformers */; };
+		56FC25752E337E540079AC18 /* SwiftFaiss in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC25742E337E540079AC18 /* SwiftFaiss */; };
+		56FC25772E337E540079AC18 /* Path in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC25762E337E540079AC18 /* Path */; };
+		56FC25802E3385010079AC18 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC257F2E3385010079AC18 /* SQLite */; };
+		56FC25822E3385010079AC18 /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC25812E3385010079AC18 /* Transformers */; };
+		56FC25842E3385010079AC18 /* SwiftFaiss in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC25832E3385010079AC18 /* SwiftFaiss */; };
+		56FC25862E3385010079AC18 /* Path in Frameworks */ = {isa = PBXBuildFile; productRef = 56FC25852E3385010079AC18 /* Path */; };
+		56FC25B62E33884F0079AC18 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 56FC25B52E33884B0079AC18 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		56FC250A2E3378190079AC18 /* RAGMesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAGMesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FC25482E3379860079AC18 /* RAGMeshIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAGMeshIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FC25B52E33884B0079AC18 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		56FC25542E3379B40079AC18 /* Exceptions for "RAGMesh" folder in "RAGMeshIOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Platform/iOS/ContentView.swift,
+				Platform/iOS/PeerClient.swift,
+				Platform/iOS/StorageUtility.swift,
+				Shared/Embedding/ChunkUtils.swift,
+				Shared/Embedding/MiniLMEmbedder.swift,
+				Shared/Embedding/MiniLMEmbedderForQuestion.swift,
+				Shared/Generation/ModelLoader.swift,
+				Shared/Models/EmbeddedChunk.swift,
+				Shared/Models/MessageType.swift,
+				Shared/Networking/EmbeddingReceiver.swift,
+				Shared/Networking/MessageHandlingDelegate.swift,
+				Shared/Networking/PeerRole.swift,
+				Shared/Networking/PeerSessionDelegate.swift,
+				Shared/Utilities/LogManager.swift,
+				Shared/Utilities/NotificationExtensions.swift,
+			);
+			target = 56FC25472E3379860079AC18 /* RAGMeshIOS */;
+		};
+		56FC25622E337A100079AC18 /* Exceptions for "RAGMesh" folder in "RAGMesh" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Platform/iOS/ContentView.swift,
+				Platform/iOS/PeerClient.swift,
+				Platform/iOS/StorageUtility.swift,
+			);
+			target = 56FC25092E3378190079AC18 /* RAGMesh */;
+		};
+		56FC25682E337BA90079AC18 /* Exceptions for "RAGMeshIOS" folder in "RAGMeshIOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 56FC25472E3379860079AC18 /* RAGMeshIOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		56FC250C2E3378190079AC18 /* RAGMesh */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				56FC25622E337A100079AC18 /* Exceptions for "RAGMesh" folder in "RAGMesh" target */,
+				56FC25542E3379B40079AC18 /* Exceptions for "RAGMesh" folder in "RAGMeshIOS" target */,
+			);
+			path = RAGMesh;
+			sourceTree = "<group>";
+		};
+		56FC25492E3379860079AC18 /* RAGMeshIOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				56FC25682E337BA90079AC18 /* Exceptions for "RAGMeshIOS" folder in "RAGMeshIOS" target */,
+			);
+			path = RAGMeshIOS;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56FC25072E3378190079AC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC25752E337E540079AC18 /* SwiftFaiss in Frameworks */,
+				56FC25772E337E540079AC18 /* Path in Frameworks */,
+				56FC25732E337E540079AC18 /* Transformers in Frameworks */,
+				56FC25712E337E540079AC18 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC25452E3379860079AC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC25842E3385010079AC18 /* SwiftFaiss in Frameworks */,
+				56FC25862E3385010079AC18 /* Path in Frameworks */,
+				56FC25822E3385010079AC18 /* Transformers in Frameworks */,
+				56FC25802E3385010079AC18 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56FC25012E3378190079AC18 = {
+			isa = PBXGroup;
+			children = (
+				56FC250C2E3378190079AC18 /* RAGMesh */,
+				56FC25492E3379860079AC18 /* RAGMeshIOS */,
+				56FC256F2E337E540079AC18 /* Frameworks */,
+				56FC250B2E3378190079AC18 /* Products */,
+				56FC25B52E33884B0079AC18 /* .gitignore */,
+			);
+			sourceTree = "<group>";
+		};
+		56FC250B2E3378190079AC18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56FC250A2E3378190079AC18 /* RAGMesh.app */,
+				56FC25482E3379860079AC18 /* RAGMeshIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56FC256F2E337E540079AC18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56FC25092E3378190079AC18 /* RAGMesh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56FC25162E33781A0079AC18 /* Build configuration list for PBXNativeTarget "RAGMesh" */;
+			buildPhases = (
+				56FC25062E3378190079AC18 /* Sources */,
+				56FC25072E3378190079AC18 /* Frameworks */,
+				56FC25082E3378190079AC18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				56FC250C2E3378190079AC18 /* RAGMesh */,
+			);
+			name = RAGMesh;
+			packageProductDependencies = (
+				56FC25702E337E540079AC18 /* SQLite */,
+				56FC25722E337E540079AC18 /* Transformers */,
+				56FC25742E337E540079AC18 /* SwiftFaiss */,
+				56FC25762E337E540079AC18 /* Path */,
+			);
+			productName = RAGMesh;
+			productReference = 56FC250A2E3378190079AC18 /* RAGMesh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56FC25472E3379860079AC18 /* RAGMeshIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56FC25502E3379870079AC18 /* Build configuration list for PBXNativeTarget "RAGMeshIOS" */;
+			buildPhases = (
+				56FC25442E3379860079AC18 /* Sources */,
+				56FC25452E3379860079AC18 /* Frameworks */,
+				56FC25462E3379860079AC18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				56FC25492E3379860079AC18 /* RAGMeshIOS */,
+			);
+			name = RAGMeshIOS;
+			packageProductDependencies = (
+				56FC257F2E3385010079AC18 /* SQLite */,
+				56FC25812E3385010079AC18 /* Transformers */,
+				56FC25832E3385010079AC18 /* SwiftFaiss */,
+				56FC25852E3385010079AC18 /* Path */,
+			);
+			productName = RAGMeshIOS;
+			productReference = 56FC25482E3379860079AC18 /* RAGMeshIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56FC25022E3378190079AC18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					56FC25092E3378190079AC18 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					56FC25472E3379860079AC18 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 56FC25052E3378190079AC18 /* Build configuration list for PBXProject "RAGMesh" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56FC25012E3378190079AC18;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				56FC25632E337AB80079AC18 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				56FC25642E337AD00079AC18 /* XCRemoteSwiftPackageReference "swift-transformers" */,
+				56FC25652E337AF00079AC18 /* XCRemoteSwiftPackageReference "SwiftFaiss" */,
+				56FC25662E337B010079AC18 /* XCRemoteSwiftPackageReference "Path.swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 56FC250B2E3378190079AC18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56FC25092E3378190079AC18 /* RAGMesh */,
+				56FC25472E3379860079AC18 /* RAGMeshIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56FC25082E3378190079AC18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC25B62E33884F0079AC18 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC25462E3379860079AC18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56FC25062E3378190079AC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC25442E3379860079AC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		56FC25142E33781A0079AC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MPQ68W9L7W;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56FC25152E33781A0079AC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = MPQ68W9L7W;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		56FC25172E33781A0079AC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RAGMesh/RAGMesh.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MPQ68W9L7W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bismansahni.RAGMesh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		56FC25182E33781A0079AC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RAGMesh/RAGMesh.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MPQ68W9L7W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bismansahni.RAGMesh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		56FC25512E3379870079AC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MPQ68W9L7W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RAGMeshIOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bismansahni.RAGMeshIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56FC25522E3379870079AC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MPQ68W9L7W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RAGMeshIOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bismansahni.RAGMeshIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56FC25052E3378190079AC18 /* Build configuration list for PBXProject "RAGMesh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FC25142E33781A0079AC18 /* Debug */,
+				56FC25152E33781A0079AC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56FC25162E33781A0079AC18 /* Build configuration list for PBXNativeTarget "RAGMesh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FC25172E33781A0079AC18 /* Debug */,
+				56FC25182E33781A0079AC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56FC25502E3379870079AC18 /* Build configuration list for PBXNativeTarget "RAGMeshIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FC25512E3379870079AC18 /* Debug */,
+				56FC25522E3379870079AC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56FC25632E337AB80079AC18 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.4;
+			};
+		};
+		56FC25642E337AD00079AC18 /* XCRemoteSwiftPackageReference "swift-transformers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-transformers.git";
+			requirement = {
+				branch = preview;
+				kind = branch;
+			};
+		};
+		56FC25652E337AF00079AC18 /* XCRemoteSwiftPackageReference "SwiftFaiss" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jkrukowski/SwiftFaiss";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.8;
+			};
+		};
+		56FC25662E337B010079AC18 /* XCRemoteSwiftPackageReference "Path.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/Path.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56FC25702E337E540079AC18 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FC25632E337AB80079AC18 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		56FC25722E337E540079AC18 /* Transformers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FC25642E337AD00079AC18 /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Transformers;
+		};
+		56FC25742E337E540079AC18 /* SwiftFaiss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FC25652E337AF00079AC18 /* XCRemoteSwiftPackageReference "SwiftFaiss" */;
+			productName = SwiftFaiss;
+		};
+		56FC25762E337E540079AC18 /* Path */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FC25662E337B010079AC18 /* XCRemoteSwiftPackageReference "Path.swift" */;
+			productName = Path;
+		};
+		56FC257F2E3385010079AC18 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FC25632E337AB80079AC18 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		56FC25812E3385010079AC18 /* Transformers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FC25642E337AD00079AC18 /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Transformers;
+		};
+		56FC25832E3385010079AC18 /* SwiftFaiss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FC25652E337AF00079AC18 /* XCRemoteSwiftPackageReference "SwiftFaiss" */;
+			productName = SwiftFaiss;
+		};
+		56FC25852E3385010079AC18 /* Path */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56FC25662E337B010079AC18 /* XCRemoteSwiftPackageReference "Path.swift" */;
+			productName = Path;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 56FC25022E3378190079AC18 /* Project object */;
+}

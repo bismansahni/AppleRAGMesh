@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_rag-service._tcp</string>
+    </array>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>This app needs access to devices on your local network to connect to your Mac.</string>
+
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict/>
+    </array>
+</dict>
+</plist>
