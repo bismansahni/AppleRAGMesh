@@ -1,0 +1,43 @@
+//
+//  .gitignore
+//  RAGMesh
+//
+//  Created by Bisman Sahni on 7/25/25.
+//
+
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+build/
+*.moved-aside
+*.xcbackuprules
+*.xccheckout
+*.xcodeproj/project.xcworkspace/
+
+# SwiftPM
+.swiftpm/
+.build/
+
+# Dependencies (local models, vocab, etc.)
+**/minilm.mlpackage
+**/vocab.txt
+**/model.onnx
+**/StatefulMistral7BInstructInt4.mlmodelc
+
+# Personal config
+*.swp
+*.env
+*.local
+
+# Logs
+*.log
+
+# App-specific
+rag.sqlite
+mesh-rag.sqlite
+meshrag.sqlite
