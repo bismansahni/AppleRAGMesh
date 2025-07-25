@@ -21,11 +21,12 @@ Currently demonstrated on **MacBook**, showcasing:
 - Generating embeddings locally with MiniLM.
 - Querying across the mesh (e.g. asking about a file that's only on another device).
 - LLM answering achieved via CoreML optimized version of Mistral7B
-
+  
 📽️ **Watch Demo:**  
-[https://arizonastateu-my.sharepoint.com/:v:/g/personal/bsahni_sundevils_asu_edu/EaoZ1Q-0E0JKqLUGmAtcK00BtqUf2H5Xz5yv-wQ_X-MKTw?e=FpTojN](https://arizonastateu-my.sharepoint.com/:v:/g/personal/bsahni_sundevils_asu_edu/EaoZ1Q-0E0JKqLUGmAtcK00BtqUf2H5Xz5yv-wQ_X-MKTw?e=FpTojN)
+**[Click here for the Demo Video](https://arizonastateu-my.sharepoint.com/:v:/g/personal/bsahni_sundevils_asu_edu/EaoZ1Q-0E0JKqLUGmAtcK00BtqUf2H5Xz5yv-wQ_X-MKTw?e=FpTojN)**
 
 ---
+
 
 ### 📱 Extending to iPhone & iPad
 
